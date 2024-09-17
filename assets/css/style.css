@@ -1,3 +1,56 @@
-h1{
-    font-weight: 100px;
+nav {
+    background-color: #FF8C5C;
+    /* background: rgb(189, 93, 9); */
+    background: linear-gradient(90deg, rgba(189, 93, 9, 1) 0%, rgba(230, 162, 52, 1) 35%, rgba(240, 161, 51, 1) 100%);
+    color: white;
+    height: 13vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+
 }
+
+header {
+
+    background-image: url(/assets/images/background-3.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1 {
+    outline-color: #ffffff;
+    outline-width: 2px;
+    outline-style: solid;
+    padding: 10px;
+
+}
+
+
+
+.nav-items {
+    display: flex;
+    gap: 55px;
+
+}
+
+.nav-items a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #ffffff;
+    color: black;
+    padding: 10%;
+    width: 120px;
+    border-radius: 15px;
+    border: none;
+}
+
