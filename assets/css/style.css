@@ -8,19 +8,21 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    z-index: 30;
+    z-index: 10;
     width: 100%;
 
 }
 
 header {
 
-    background-image: url(/assets/images/background-3.jpg);
+    background-image: url(../images/background-2.jpg);
     height: 100vh;
-    background-position: center;
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 
 h1 {
@@ -30,6 +32,13 @@ h1 {
     padding: 10px;
 
 }
+.header-text-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 0px;
+    }
 
 
 
@@ -43,14 +52,127 @@ h1 {
     color: white;
     font-size: 15px;
     font-weight: bold;
+    gap: 55px;
 }
 
 .button {
-    background-color: #ffffff;
-    color: black;
+    background-color: #c61414;
     padding: 10%;
     width: 120px;
     border-radius: 15px;
     border: none;
 }
 
+.button:hover {
+    color: white;
+    background: linear-gradient(90deg, rgba(88, 88, 57, 1) 0%, rgba(57, 38, 3, 1) 88%);
+}
+
+.button a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+}
+
+.image-container img {
+    margin: 70px;
+    padding-left: 20%;
+    width: 70%;
+    /* height: 50%; */
+}
+
+.text-container {
+    margin: 20px;
+    padding: 50px;
+    align-items: center;
+
+}
+
+
+.text-container h4 {
+    padding-top: 15%;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text-container p {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.section-button1 {
+    background-color: #EFA133;
+    border: none;
+    color: white;
+    padding: 3.5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.section-button1:hover {
+    background-color: #744106;
+    color: white;
+}
+
+
+.section-button1 a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: center;
+    width: auto;
+}
+
+.slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+.client-section{
+    text-align: center;
+    padding-top: 5%;
+}
