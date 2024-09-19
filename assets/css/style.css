@@ -198,6 +198,7 @@ nav {
 }
 
 #Services{
+    text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
@@ -227,6 +228,18 @@ nav {
     outline-width: 2px;
     outline-style: solid;
     padding: 20px;
+    padding-bottom: 10%;
+}
+
+
+.service-sections img{
+    width: 10%;
+    height: 50px;
+    padding-left: 45%;
+}
+.service-sections h4{
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 /* .service-sections ::after{
